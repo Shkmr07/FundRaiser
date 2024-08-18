@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<style>
+
+        
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    
+    #cont {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    
+    #cont h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input[type="text"], input[type="password"] {
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        width: 100%;
+        transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus, input[type="password"]:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    
+    p {
+        margin-top: 15px;
+        font-size: 14px;
+        color: #666;
+    }
+
+    p a {
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    p a:hover {
+        text-decoration: underline;
+    }
+
+    
+    p b {
+        font-weight: bold;
+        color: #333;
+    }
+
+</style>
+<body>
+    <div id="cont">
+        <h2>Your account details</h2>
+        <form method="post" id="login"  >
+            <input type="text" id="logInp" placeholder="Username">
+            <input type="password"  id="logPass" placeholder="Password">
+            <input type="submit" id="submit" value="Sign in">
+        </form>
+        <p><a href="#">Forget the password?</a></p>
+        <p><b>Do not have an account</b> <a href="./signup.html">Sign up</a></p>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation</title>
+</head>
+<style>
+
+        /* Apply basic styling to the body */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    /* Create a container that holds both the campaign and donor sections */
+    .container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    /* Style for the campaign details section */
+    #cont {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    /* Style for the donor list section */
+    #donorlist {
+        flex: 1;
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+
+    /* Style for the campaign image */
+    #cont img {
+        display: block;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    /* Style for the campaign title */
+    #cont h2 {
+        margin-top: 0;
+        font-size: 24px;
+        color: #2c3e50;
+    }
+
+    /* Style for paragraphs */
+    #cont p, #donorlist p {
+        margin: 10px 0;
+        line-height: 1.6;
+    }
+
+    /* Style for the donor list items */
+    #donorlist li {
+        list-style: none;
+        margin-bottom: 10px;
+        padding: 10px;
+        background-color: #e3e3e3;
+        border-radius: 5px;
+    }
+
+    /* Responsive design for smaller screens */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+    }
+
+</style>
+
+<body>
+    <div id="cont"></div>
+    <div id="donorlist"></div>
+    <script src="./donation.js"></script>
+</body>
+</html>

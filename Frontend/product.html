@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<style>
+       
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    
+    #camp {
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    
+    #camp h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        color: #333;
+    }
+
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    input[type="text"], input[type="file"] {
+        padding: 12px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        width: 100%;
+        transition: border-color 0.3s;
+    }
+
+    input[type="text"]:focus, input[type="file"]:focus {
+        border-color: #007bff;
+        outline: none;
+    }
+
+    input[type="file"] {
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    input[type="submit"] {
+        background-color: #28a745;
+        color: #fff;
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #218838;
+    }
+
+</style>
+<body>
+    <div id="camp">
+        <h2>Create Campaign</h2>
+        <form method="post" action="./index.html">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="des" placeholder="Description">
+            <input type="text" id="goal" placeholder="Goal Amount">
+            <input type="file" id="file">
+            <input type="submit" id="submit" value="Create Campaign">
+        </form>
+    </div>
+</body>
+</html>
